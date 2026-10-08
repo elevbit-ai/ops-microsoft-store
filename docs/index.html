@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpS / Elevbit — Apps para a Microsoft Store</title>
+<meta name="author" content="Joaquim Pedro de Morais Filho">
+<meta name="description" content="Apps web (PWA) e Windows de Joaquim Pedro de Morais Filho, prontos para a Microsoft Store. Instale os PWAs direto no navegador.">
+<style>
+  :root{--bg:#0b1020;--card:#16203a;--line:#263252;--fg:#e6ecff;--muted:#9aa6c0;--green:#1fbf66;--green2:#4dff88}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+  a{color:var(--green2);text-decoration:none}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header{padding:48px 0 24px;text-align:center}
+  header h1{font-size:38px;letter-spacing:-.5px}
+  header h1 span{color:var(--green2)}
+  header p{color:var(--muted);font-size:18px;margin-top:10px}
+  .note{background:#131d12;border:1px solid #2a5a2a;color:#bfe8bf;border-radius:10px;padding:12px 16px;margin:22px 0;font-size:14px}
+  h2{font-size:24px;margin:34px 0 8px}
+  .muted{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;gap:16px;align-items:flex-start}
+  .card img{width:64px;height:64px;border-radius:14px;border:1px solid var(--line)}
+  .card h3{font-size:19px}
+  .card p{color:var(--muted);font-size:14px;margin:4px 0 12px}
+  .card a.btn{display:inline-block;background:var(--green);color:#04210f;font-weight:700;border-radius:9px;padding:9px 16px;font-size:14px}
+  .card a.btn:hover{background:var(--green2)}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:14px}
+  th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left}
+  th{color:var(--muted);font-weight:600}
+  footer{border-top:1px solid var(--line);margin-top:48px;padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>OpS / <span>Elevbit</span> — rumo à Microsoft Store</h1>
+    <p>Apps de Joaquim Pedro de Morais Filho preparados para publicação. Os PWAs abaixo já instalam direto no navegador.</p>
+  </header>
+
+  <div class="note">📲 <b>Instale agora:</b> abra um app no Edge ou Chrome e use o menu <b>“Instalar app”</b> (ícone na barra de endereço). No Android, “Adicionar à tela inicial”.</div>
+
+  <h2>Apps web (PWA) prontos</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://elevbit-ai.github.io/plantacad/icon-192.png" alt="PlantaCAD">
+      <div><h3>PlantaCAD</h3><p>Editor de plantas baixas no navegador, com inteligência de projeto.</p><a class="btn" href="https://elevbit-ai.github.io/plantacad/">Abrir / Instalar</a></div>
+    </div>
+    <div class="card">
+      <img src="https://elevbit-ai.github.io/inpiojus/icon-192.png" alt="InpioJus">
+      <div><h3>InpioJus</h3><p>IA jurídica para petições e argumentos, em português.</p><a class="btn" href="https://elevbit-ai.github.io/inpiojus/">Abrir / Instalar</a></div>
+    </div>
+    <div class="card">
+      <img src="https://elevbit-ai.github.io/atomicsim/icon-192.png" alt="AtomicSim">
+      <div><h3>AtomicSim</h3><p>Simulador interativo de fissão nuclear.</p><a class="btn" href="https://elevbit-ai.github.io/atomicsim/">Abrir / Instalar</a></div>
+    </div>
+    <div class="card">
+      <img src="https://elevbit-ai.github.io/02quest-vault/icon-192.png" alt="02quest Vault">
+      <div><h3>02quest Vault</h3><p>Banco de dados ultradenso com criptografia AES-256.</p><a class="btn" href="https://elevbit-ai.github.io/02quest-vault/">Abrir / Instalar</a></div>
+    </div>
+  </div>
+
+  <h2>Status de publicação</h2>
+  <table>
+    <tr><th>App</th><th>Tipo</th><th>Caminho</th><th>Status</th></tr>
+    <tr><td>PlantaCAD</td><td>Web</td><td>PWA</td><td>✅ pronto p/ PWABuilder</td></tr>
+    <tr><td>InpioJus</td><td>Web</td><td>PWA</td><td>✅ pronto p/ PWABuilder</td></tr>
+    <tr><td>AtomicSim</td><td>Web</td><td>PWA</td><td>✅ pronto p/ PWABuilder</td></tr>
+    <tr><td>02quest Vault</td><td>Web</td><td>PWA</td><td>✅ pronto p/ PWABuilder</td></tr>
+    <tr><td>JP TERMINAL, Win OpS, OpS Silence…</td><td>Windows</td><td>MSIX</td><td>⚙️ via template</td></tr>
+    <tr><td>JP Teleprompter, OpS Bank Crypto, ops-*-android…</td><td>Android</td><td>Google Play</td><td>❌ fora da Microsoft Store</td></tr>
+  </table>
+
+  <h2>Como publicar</h2>
+  <p class="muted">Passo a passo completo (conta, PWABuilder, MSIX, listagem) no repositório:
+  <a href="https://github.com/elevbit-ai/ops-microsoft-store">github.com/elevbit-ai/ops-microsoft-store</a>.</p>
+
+  <footer>
+    Criado por <b>Joaquim Pedro de Morais Filho</b> · j360074@hotmail.com · © 2026
+  </footer>
+</div>
+</body>
+</html>
