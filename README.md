@@ -30,8 +30,17 @@ docs/                  Página (GitHub Pages) com os PWAs e links de instalaçã
 | **InpioJus** — IA jurídica | https://elevbit-ai.github.io/inpiojus/ |
 | **AtomicSim** — simulador de fissão nuclear | https://elevbit-ai.github.io/atomicsim/ |
 | **02quest Vault** — banco ultradenso + AES-256 | https://elevbit-ai.github.io/02quest-vault/ |
+| **OpS Image Data** — esteganografia | https://elevbit-ai.github.io/ops-image-data/ |
+| **zkinv** — previsibilidade de ativos (IA) | https://elevbit-ai.github.io/zkinv/ |
+| **zkinv Futebol** — previsor de partidas | https://elevbit-ai.github.io/zkinv-futebol/ |
+| **Nexus Store** — loja digital USDT (BEP20) | https://elevbit-ai.github.io/nexus-store/ |
+| **COBOL DB API** — banco de dados + API | https://elevbit-ai.github.io/cobol-db-api/ |
 
 Cada um já tem `manifest.json`, `sw.js` e ícones (192/512/maskable) publicados. No celular ou no Edge/Chrome dá para **instalar agora** pelo menu “Instalar app”.
+
+## Exemplo MSIX pronto (Windows)
+
+Em [`msix-template/exemplo-jp-terminal/`](msix-template/exemplo-jp-terminal/) há o pacote do **JP TERMINAL** montado (launcher `JPTerminal.exe` compilado + script + manifesto + artes). Basta `makeappx pack` (Windows SDK) para gerar o `.msix`.
 
 ## Caminho de cada projeto
 
